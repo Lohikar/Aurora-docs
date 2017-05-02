@@ -1,7 +1,7 @@
 # Processing Subsystems #
 `processing_objects` is now considered obsolete and should be avoided whenever possible.
 
-`process()` is now defined at the `/datum` level, as such any variable can be made to process with a processing subsystem.
+`process()` is now defined at the `/datum` level, as such any datum (sub-)type can be made to process with a processing subsystem.
 
 To register an object with a processing subsystem, use `START_PROCESSING(the_processing_subsystem, your_object)`, generally you want to use `SSprocessing`. 
 
