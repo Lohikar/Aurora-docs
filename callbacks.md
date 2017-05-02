@@ -1,5 +1,5 @@
 # Callbacks #
-The callback datum `/datum/callback` represents a proc & the required information to call it. They are used extensively by SStimer/addtimer.
+The callback datum `/datum/callback` represents a proc & the required information to call it. They can be called in a blocking or non-blocking (async) manner.
 
 ## General Usage ##
 Global proc with no arguments: `CALLBACK(GLOBAL_PROC, /proc/do_the_thing)`

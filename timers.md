@@ -1,7 +1,7 @@
 # SStimer and addtimer #
 SStimer is a system that replaces spawn() and Scheduler. **Timers are faster than spawn() and it is preferred to use addtimer instead of spawn whenever possible.**
 
-Timers cannot fire before master controller initialization completes.
+Timers cannot fire before master controller initialization completes at server startup.
 
 ## Arguments ##
 
@@ -10,6 +10,8 @@ Timers cannot fire before master controller initialization completes.
 `flags` is optional, `callback` and `time` are not. `time` can be zero.
 
 SStimer will invoke `callback` after `time` ds have passed. The callback will not block further timers from processing.
+
+Generally the first argument should be a `CALLBACK()` call, like `addtimer(CALLBACK(src, .proc/something), 15)`.
 
 ## Flags ##
 The following flag are understood by addtimer:
