@@ -1,10 +1,12 @@
 # Overlays & SSoverlay #
-SSoverlay is a new way to handle `/atom` overlays that allows for automatic overlay caching and reduced appearance churn.
+SSoverlay is a new way to handle `/atom` overlays that allows for automatic overlay caching.
+
+Do not mix `add_overlay`/`cut_overlay` with manual overlay list manipulation, SSoverlay will overwrite the overlay list!
 
 ## Usage ##
 `/atom/add_overlay(image|text|icon|list(image|text|icon), priority = FALSE)`
 
-Arguments mimic arguments accepted by `atom += `. If argument is a list, all contents of list are added to overlays.
+Arguments mimic arguments accepted by `overlays += `. If argument is a list, all contents of list are added to overlays.
 If `priority` is true, the overlay will be added as a priority overlay - it will not be removed by `cut_overlay()` and `cut_overlays()` UNLESS the call to `cut_overlay()` or `cut_overlays()` also has `priority` as true.
 
 
