@@ -6,7 +6,7 @@ The `/atom` initialization process has changed dramatically. All `/atom` types i
 ## Basic Usage ##
 Overriding/defining `New()` should be avoided when possible in favor of `Initialize()`.
 
-`Initialize()` always has at least one argument: `mapload`. It is always the first argument. `mapload` is `TRUE` if the atom is being initialized during server startup, `FALSE` otherwise. If any other arguments are passed to `New()`, they will come after mapload. Initialize must return parent.
+`Initialize()` always has at least one argument: `mapload`. It is always the first argument. `mapload` is `TRUE` if the atom is being initialized during server startup, `FALSE` otherwise. If any other arguments are passed to `New()`, they will come after mapload. Initialize must return parent or call parent and return an initialization hint.
 
 Example:
 ```
