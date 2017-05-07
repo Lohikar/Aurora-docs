@@ -12,3 +12,5 @@ The LAZY* helpers are a set of defines useful for working with lists in a way th
 `LAZYCLEARLIST(list)` - Clears `list` via. `Cut()`. If `list` is null, nothing is done.
 
 `UNSETEMPTY(list)` - If `list` has no length, it is nulled out. Otherwise, nothing is done.
+
+`LAZYINITLIST(list)` - If `list` is null, a new list is created and assigned to `list`.
