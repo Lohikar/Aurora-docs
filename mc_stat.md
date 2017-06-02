@@ -17,7 +17,7 @@ The `Master Controller` line has the following values:
 |:--------:|-------------|
 | TickRate | The MC will tick every this many BYOND ticks. Should usually be 1.|
 | Iteration | How many times the MC has ticked since it was created or last restarted. |
-| SleepDelta | The higher this is, the more the MC is delaying `CHECK_TICK` sleeps. |
+| SleepDelta | How much MC fires & `CHECK_TICK` are being delayed. Below 1 means no delay. |
 
 The `Failsafe` line has the following values:
 
