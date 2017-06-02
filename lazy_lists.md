@@ -5,7 +5,7 @@ The LAZY* helpers are a set of defines useful for working with lists in a way th
 
 `LAZYREMOVE(list, item)` - removes `item` from `list`. If `list` is null, nothing is done. If `list` has 0 length after the item is removed, it is nulled out.
 
-`LAZYACCESS(list, index)` - accesses `index` index of `list`. if `list` is null, `null` is returned. If `index` is a number and `list.len` is greater than `index`, `null` is returned. Otherwise, value at `list[index]` is returned.
+`LAZYACCESS(list, index)` - accesses `index` index of `list`. if `list` is null, `null` is returned. If `index` is a number and `index` is greater than `list.len`, `null` is returned. Otherwise, value at `list[index]` is returned.
 
 `LAZYLEN(list)` - gets the length of `list`. If `list` is null, returns `0`.
 
